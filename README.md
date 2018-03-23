@@ -5,10 +5,10 @@ Provide a diagram of your site architecture showing key components that illustra
 
 __Optional Features__
 For bonus credit consider using one or more of these techniques:
-● Templated infrastructure as code.
-● Automated testing
-● Origami Components/FT look and feel
-● The ability to view the ratings/results
+- Templated infrastructure as code.
+- Automated testing
+- Origami Components/FT look and feel
+- The ability to view the ratings/results
 
 
 ### Let's get started!
@@ -38,7 +38,7 @@ Component      | Purpose                | Technology | Testing library
 ------------ | -------------------------- | ------------ |---------
 App.js| Client-side 'main' component from where the app is ran | JavaScript | Jest
 Ratings.js| Server-side component that enables the ratings logic | Express + Node.js | Mocha
-DataBase | Back-end. Keeps track of the votes | MongoDB | ??
+DataBase | Back-end. Keeps track of the ratings | MongoDB | ??
 
 Please note: these libraries can be found in the package.json file of this project
 

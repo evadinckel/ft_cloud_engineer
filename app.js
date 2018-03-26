@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import UsersRatings from './src/UsersRatings';
-import Style from './src/style.js';
+import Wrapper from './src/Wrapper.js';
+
+
+
+class App extends Component {
+
+};
 
 
 
@@ -9,17 +15,14 @@ import Style from './src/style.js';
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+render(){
+  return (
+    <div>
+      <Wrapper user={this.state}/>
+    </div>
+    );
+  }
+};
 
 
 

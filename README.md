@@ -31,24 +31,22 @@ I want to be able to click on a button
 
 #### Architecture / Technologies / Testing
 
-- I have used REACT and the MERN stack to work on this assignment
-- REACT ARCHITECTURE (...)    In terms of structure, my application is made of the following:
+- The goal was to use REACT and the MERN stack to work on this assignment
+- REACT ARCHITECTURE - In terms of structure, my application is made of the following:
 
 Component      | Purpose                | Technology/Framework | Testing library
 ------------ | -------------------------- | ------------ |---------
 App.js| Imports various components within the application | JavaScript | Jest
-UsersRatings.js| Server-side component that enables the ratings logic | Node.js/Express | Mocha
-server.js| ???  | ??? | ???
-ratingsdatabase.js | Database for the users ratings | MongoDB | ??
+UsersRatings.js| Component that enables the ratings logic.| Node.js/Express | Mocha
+server.js| enables access to databse through client requests | Express |
+ratingsdatabase.js | Database for the users ratings | MongoDB |
 
-Please note: these libraries can be found in the package.json file of this project
+Please note: dependencies can be found in the package.json file of this project
 
 
 #### Deployment
 
-- This has been the most exciting and challenging part for me.
-I have deployed the FT Ratings App through Heroku.
-The app is available at: 
+- I was planning on using Heroku to deploy the completed application.
 
 
 
@@ -72,7 +70,7 @@ You will then need to install dependencies by running the following:
 
 Please run the following command to see the application in your browser:
 ```
-$ npm run-dev
+$ npm start
 ```
 
 - Running the command above should open a browser window, where you can give your vote!
@@ -83,13 +81,13 @@ $ npm run-dev
  - Room for improvement on the below:
     - testing
     - styling of the UI
+    - needed a database in place
 
 
 
 #### Additional notes
 
-This test has been a really interesting exercise for me, particularly when it comes to handling..............................bla
-
+This test has been a really interesting exercise for me, I have chose to build a MERN stack based application, which has shown to be quite ambitious. All tech tests are incredibly helpful to keep on developing skills, so I take this assignment as valuable practice.
 
 
 

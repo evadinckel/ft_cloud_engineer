@@ -1,23 +1,28 @@
-var express    = require('express');
-var app        = express();
-var bodyParser = require('body-parser');
+import express from 'express';
+import UsersRatings from './src/UsersRatings.js';
+
+const app = express();
+const usersratings = new UsersRatings();
 
 
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
-
-var port = process.env.PORT || 8080;
-
-
-var router = express.Router();
-
-
-router.get('/', function(req, res) {
-    res.json({ message: 'hooray! welcome to our api!' });
-});
-
-app.use('/api', router);
+app.get(
+  '/excellent',
+  function(req, res, next) {
+    usersratings.rateExcellent();
+    next();
+  },
+  function(req, res) {
+    res.send({ ratings: usersratings.excellentrating });
+  }
+);
 
 
-app.listen(port);
-console.log('Magic happens on port ' + port);
+
+var server = app.listen(4000, () =>
+  console.log('App listening on port 4000!')
+);
+
+module.exports = {
+  server: server,
+  app: app
+};

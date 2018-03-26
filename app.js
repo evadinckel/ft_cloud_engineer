@@ -1,5 +1,28 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import UsersRatings from './components/UsersRatings'
-// import Index from './public/index.html'
-ReactDOM.render(<UsersRatings />, document.getElementById('app'))
+import React, { Component } from 'react';
+import UsersRatings from './src/UsersRatings';
+import Style from './src/style.js';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+export default App;

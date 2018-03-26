@@ -31,14 +31,15 @@ I want to be able to click on a button
 
 #### Architecture / Technologies / Testing
 
-- I have used REACT to work on this assignment
+- I have used REACT and the MERN stack to work on this assignment
 - REACT ARCHITECTURE (...)    In terms of structure, my application is made of the following:
 
-Component      | Purpose                | Technology | Testing library
+Component      | Purpose                | Technology/Framework | Testing library
 ------------ | -------------------------- | ------------ |---------
-App.js| Client-side 'main' component from where the app is ran | JavaScript | Jest
-Ratings.js| Server-side component that enables the ratings logic | Express + Node.js | Mocha
-DataBase | Back-end. Keeps track of the ratings | MongoDB | ??
+App.js| Imports various components within the application | JavaScript | Jest
+UsersRatings.js| Server-side component that enables the ratings logic | Node.js/Express | Mocha
+server.js| ???  | ??? | ???
+ratingsdatabase.js | Database for the users ratings | MongoDB | ??
 
 Please note: these libraries can be found in the package.json file of this project
 
@@ -46,7 +47,8 @@ Please note: these libraries can be found in the package.json file of this proje
 #### Deployment
 
 - This has been the most exciting and challenging part for me.
-I have deployed the ft rating app through Heroku
+I have deployed the FT Ratings App through Heroku.
+The app is available at: 
 
 
 
@@ -70,16 +72,17 @@ You will then need to install dependencies by running the following:
 
 Please run the following command to see the application in your browser:
 ```
-$ npm run both
+$ npm run-dev
 ```
-This will allow you to run both the client and the server of this application
 
 - Running the command above should open a browser window, where you can give your vote!
 
 
 #### Notes
-database....................................................bla
 
+ - Room for improvement on the below:
+    - testing
+    - styling of the UI
 
 
 
